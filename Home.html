@@ -8,6 +8,7 @@
 </head>
 <body>
 <div class="Header", style="font-family: Verdana, Geneva, Tahoma, sans-serif;">  
+    
     <svg class="Header-Rectangle">
         <rect id="Header-Rectangle" rx="0" ry="0" x="0" y="0" width="1280" height="90">
         </rect>
@@ -47,6 +48,41 @@
     <br>
     <br>
     <br>
+    <div class="Container" id="Container">
+        <img src="Airplane.jpg" alt="Airplane" style="width:100%">
+        <div class="Welcome">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>
+                Welcome to Passport Seva.
+                Apply Passport Here!
+            </h1>
+            
+            <marquee id="img_marq">
+            Apply for Passport here by registering and Applying the Application Below the page!!!
+            </marquee>
+
+            
+            <div class="slide" >
+                <img class="mySlides" src="PP.jpeg" >
+                <img class="mySlides" src="flight_2.jpg" >
+                <img class="mySlides" src="indian-passport.jpg" >
+                <img class="mySlides" src="Passport seva.jpg" >
+            </div>
+
+            
+        </div>
+
+    </div>
     <h2> Passport Application</h2>
     <a href='Passport_Home.html'> 
         <button class="Button" id="Button1"> 
@@ -68,5 +104,24 @@
             Track Application Status. 
         </button>
     </a> 
+
+    
+
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
 
     

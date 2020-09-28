@@ -9,6 +9,24 @@
     font-family: 'Do Hyeon', sans-serif;
 
   }
+  .mySlides{
+    height: 300px;;
+    width: 631px;
+    
+  }
+  .Welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: large;
+  }
+  img{
+    height: 650px;
+    width: 400px;
+    
+  }
 
 h3{
   font-size: 20px;
@@ -200,6 +218,7 @@ background-image: url("Bg.jpg");
   h1 {
     margin: 0 0 30px 0;
     text-align: center;
+    font-size: 25px;
   }
   
   input[type="text"],
