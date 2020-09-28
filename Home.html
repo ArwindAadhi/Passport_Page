@@ -73,10 +73,10 @@
 
             
             <div class="slide" >
-                <img class="mySlides" src="PP.jpeg" >
-                <img class="mySlides" src="flight_2.jpg" >
-                <img class="mySlides" src="indian-passport.jpg" >
-                <img class="mySlides" src="Passport seva.jpg" >
+                <img class="myslid" src="PP.jpeg" >
+                <img class="myslid" src="flight_2.jpg" >
+                <img class="myslid" src="indian-passport.jpg" >
+                <img class="myslid" src="Passport seva.jpg" >
             </div>
 
             
@@ -108,19 +108,19 @@
     
 
       <script>
-        var myIndex = 0;
-        carousel();
+        var myind = 0;
+        slideshow();
         
-        function carousel() {
+        function slideshow() {
           var i;
-          var x = document.getElementsByClassName("mySlides");
+          var x = document.getElementsByClassName("myslid");
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
           }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
+          myind++;
+          if (myind > x.length) {myind = 1}    
+          x[myind-1].style.display = "block";  
+          setTimeout(slideshow, 2000); // Change image every 2 seconds
         }
         </script>
 
