@@ -1,7 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<link href="Passport.css" rel="stylesheet" type="text/css">
-<script src="Passport_home.js"></script>
+<link href="Passport_Design.css" rel="stylesheet" type="text/css">
+<script src="Passport.js"></script>
 <head>
 <meta charset="ISO-8859-1">
 <title>Passport Home</title>
@@ -26,10 +28,10 @@
             </path>
         </svg>
     </div>
-    <a  href="Home.html" div id="Home">
+    <a  href="Home.jsp" div id="Home">
         <span>Home</a></span>
     </div>
-    <a href ="About_us.html" div id="About_Us">
+    <a href ="About_us.jsp" div id="About_Us">
         <span>About Us</a></span>
     </div>
     <div id="Passport_Offices">
@@ -51,7 +53,7 @@
 
     <marquee>Welcome to Passport Seva. Apply for Passport here and Get it within 1 month after Applied.Operations at select Passport Seva Kendra (PSKs) and Post Office Passport Seva Kendras (POPSKs) have been resumed. Please refer the list of operational PSKs and POPSKs in the Latest News Section. Applicants may reschedule their appointments to the nearest operational PSK/POPSK to avail the services.  </marquee>
 
-    <form name ="Form" action="Registered.html" onsubmit= " return validateForm()" method="post" >
+    <form name ="Form" action="Registered.jsp" onsubmit= " return validateForm()" method="post" >
   
         <h1>Passport Registration</h1>
         

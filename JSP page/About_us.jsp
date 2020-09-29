@@ -1,13 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<link href="Passport.css" rel="stylesheet" type="text/css">
-<script src="Passport_home.js"></script>
+<link href="Passport_Design.css" rel="stylesheet" type="text/css">
+<script src="Passport.js"></script>
 <head>
 <meta charset="ISO-8859-1">
 <title>Passport Home</title>
 </head>
 <body>
 <div class="Header", style="font-family: Verdana, Geneva, Tahoma, sans-serif;">  
+    
     <svg class="Header-Rectangle">
         <rect id="Header-Rectangle" rx="0" ry="0" x="0" y="0" width="1280" height="90">
         </rect>
@@ -25,10 +28,10 @@
             </path>
         </svg>
     </div>
-    <a  href="Home.html" div id="Home">
+    <a  href="Home.jsp" div id="Home">
         <span>Home</a></span>
     </div>
-    <a href ="About_us.html"div id="About_Us">
+    <a href ="About_us.jsp" div id="About_Us">
         <span>About Us</a></span>
     </div>
     <div id="Passport_Offices">
@@ -41,19 +44,3 @@
         <span>Ministry of External Affairs, Government of India</span>
     </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <h3> ! You are not eligible to view this page. Please apply for Passport and this page will be enabled</h3>
-    <a href='Home.html'> 
-        <button class="Button" id="Button1"> 
-            Back 
-        </button>
-    </a> 
-    </body>
-    </html>

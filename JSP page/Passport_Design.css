@@ -1,0 +1,374 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Varela+Round&display=swap');
+#Passport_Home {
+    position: absolute;
+    width: 1280px;
+    height: 2695px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    font-family: 'Do Hyeon', sans-serif;
+
+  }
+  .myslid{
+    height: 300px;;
+    width: 631px;
+    
+  }
+  .Welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: large;
+  }
+  img{
+    height: 650px;
+    width: 400px;
+    
+  }
+
+h3{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-emphasis-color: rgba(38,155,151,1);
+  color: red;
+}
+h2{
+
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: rgba(38,155,151,1);
+}
+    
+body
+{
+background-color: rgb(206, 195, 195);
+background-image: url("Bg.jpg");
+}
+
+.Header-Rectangle
+{
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.4));
+    position: absolute;
+    overflow: visible;
+    width: 1298px;
+    height: 108px;
+    left: 0px;
+    top: 0px;
+  
+}
+#Header-Rectangle {
+    fill: rgba(38,155,151,1);
+}
+#Passport_Seva {
+    left: 73px;
+    top: 16px;
+    position: absolute;
+    overflow: visible;
+    width: 189px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Do Hyeon', sans-serif;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+#Logo {
+    position: absolute;
+    width: 37px;
+    height: 39px;
+    left: 20px;
+    top: 26px;
+    overflow: visible;
+}
+#Circle {
+    fill: rgba(255,255,255,1);
+}
+.Circle {
+    position: absolute;
+    overflow: visible;
+    width: 23px;
+    height: 23px;
+    left: 7px;
+    top: 0px;
+}
+#Triangle {
+    fill: rgba(255,255,255,1);
+}
+.Triangle {
+    overflow: hidden;
+    position: absolute;
+    width: 37px;
+    height: 31px;
+    left: 0px;
+    top: 8px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Home {
+    left: 571px;
+    top: 29px;
+    position: absolute;
+    overflow: visible;
+    width: 70px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+}
+#About_Us {
+    left: 690px;
+    top: 29px;
+    position: absolute;
+    overflow: visible;
+    width: 107px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+}
+#Passport_Offices {
+    left: 846px;
+    top: 29px;
+    position: absolute;
+    overflow: visible;
+    width: 184px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+}
+#Contact_Us {
+    left: 1079px;
+    top: 29px;
+    position: absolute;
+    overflow: visible;
+    width: 124px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+}
+#Ministry_of_External_Affairs_G {
+    left: 73px;
+    top: 56px;
+    position: absolute;
+    overflow: visible;
+    width: 177px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    color: rgba(255,255,255,1);
+}
+
+#Introduction{
+    left: 571px ;
+    right: 29px;
+    bottom: 280px;
+    font-size:25px;
+    font-style: Bold;
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+    text-align: center;
+    position: fixed;
+    overflow: visible;
+    width: 70px;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Varela Round', sans-serif;
+    color:white;
+  }
+  
+  form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: rgba(75,172,169,1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+
+  h4{
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 25px;
+    color: rgba(75,172,169,1);
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 15px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color:  rgba(75,172,169,1);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+
+  #Button1{
+    align-items: center;
+    padding: 19px 80px 18px 39px;
+    color: rgba(75,172,169,1);
+    background-color:  white;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.5) inset;
+    margin-bottom: 10px;
+    transition-duration: 0.4s;
+    font-family: 'Varela Round', sans-serif;
+    text-decoration: none;
+
+  }
+
+  #Button1:hover{
+    background-color: rgb(43, 107, 105);
+      color: white;
+  }
+  
+  button {
+    padding: 19px 39px 18px 39px;
+    color: rgba(75,172,169,1);
+    background-color:  white;
+    font-size: 22px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.5) inset;
+    margin-bottom: 10px;
+    transition-duration: 0.4s;
+    font-family: 'Varela Round', sans-serif;
+  }
+  button:hover{
+  background-color: rgb(43, 107, 105);
+    color: white;
+  }
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .number {
+    background-color: rgb(43, 107, 105) ;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+    font-family: 'Varela Round', sans-serif;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 450px;
+    }
+  
+  }
+
+  marquee{
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:rgb(43, 107, 105) ;
+  color:white;
+  position: relative;
+  overflow: hidden;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  }
+
+#slide{
+align-items: center;
+  }
+  
+  

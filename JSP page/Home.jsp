@@ -1,7 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<link href="Passport.css" rel="stylesheet" type="text/css">
-<script src="Passport_home.js"></script>
+<meta charset="ISO-8859-1">
+<link href="Passport_Design.css" rel="stylesheet" type="text/css">
+<script src="Passport.js"></script>
 <head>
 <meta charset="ISO-8859-1">
 <title>Passport Home</title>
@@ -84,22 +87,22 @@
 
     </div>
     <h2> Passport Application</h2>
-    <a href='Passport_Home.html'> 
+    <a href='Passport_Home.jsp'> 
         <button class="Button" id="Button1"> 
             New User Registration 
         </button>
     </a> 
-    <a href='Not_Eligible.html'> 
+    <a href='Not_Eligible.jsp'> 
         <button class="Button" id="Button1"> 
             Existing User Login 
         </button>
     </a> 
-    <a href='Not_Eligible.html'> 
+    <a href='Not_Eligible.jsp'> 
         <button class="Button" id="Button1"> 
-            Appoinment  Availability 
+            Appointment  Availability 
         </button>
     </a> 
-    <a href='Not_Eligible.html'> 
+    <a href='Not_Eligible.jsp'> 
         <button class="Button" id="Button1"> 
             Track Application Status. 
         </button>
