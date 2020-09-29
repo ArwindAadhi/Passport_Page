@@ -59,59 +59,63 @@
         
         <fieldset>
           <legend><span class="number">1</span>Required Details</legend>
-          <label for="name">Name:</label>
+          <label class = "required" for="name">Name:</label>
           <input type="text" id="name" placeholder="Name" name="name">
     
-          <label for="Gender">Gender:</label>
+          <label class = "required" for="Gender">Gender:</label>
           <input type="radio" name="gender" value="male" checked>Male<br>
           <input type="radio" name="gender" value="female" checked>Female<br>
-          
           <br>
+          
+          <label class="required" for="DOB"> Date of Birth:</label>
+          <input type="date" id="dob" placeholder="(dd/mm/yyyy)" name = "dob">
     
-          <label for="mail">Email:</label>
+          <label class="required" for="mail">Email:</label>
           <input type="email" id="mail" name="user_email" placeholder="Email">
           
-          <label for="password">Password:</label>
+          <label class = "required" for="password">Password:</label>
           <input type="password" id="password" name="user_password" Placeholder="Password">
           
-          <label for="Father Name">Father Name:</label>
+          <label class = "required" for="Father Name">Father Name:</label>
           <input type="text" id="father_name" name="father_name" placeholder="Father Name">
     
-          <label for="Mother Name">Mother Name:</label>
+          <label class = "required" for="Mother Name">Mother Name:</label>
           <input type="text" id="mother_name" name="mother_name" placeholder="Mother Name">
     
-          <label for="pan_number">PAN Number:</label>
+          <label class = "required" for="pan_number">PAN Number:</label>
           <input type="text" id="pan_number" name="pan_number" placeholder="PAN Number">
+          
     
-          <label for="aadhar_number">Aadhar Number:</label>
+          <label class = "required" for="aadhar_number">Aadhar Number:</label>
           <input type="text" id="aadhar_number" name="aadhar_number" placeholder="Aadhar Number">
         
-          <label for="state">Martial Status:</label>
+          <label class = "required" for="state">Martial Status:</label>
         <select id="martial_status" name="martial_status" >
             <option value="Single">Single</option>
-            <option value="married">Married</option>
-    
-          <label>Age:</label>
-          <input type="number" id="age" name="Age" placeholder="Age" value="18">
+            <option value="married">Married</option></select>
+            
+            
+    	 <label class= "required" for="Age"> Age:</label>
+		 <input type="number" id="age" name="age" placeholder="Age">        
         </fieldset>
         
         <fieldset>
           <legend><span class="number">2</span>Address Details</legend>
-          <label for="address">Address:</label>
+          <label class = "required" for="address">Address:</label>
           <textarea id="Addres" placeholder="Address" name="Address"></textarea>
         </fieldset>
         <fieldset>
     
-        <label for="door_no">Door No :</label>
+        <label class = "required" for="door_no">Door No :</label>
         <input type="text" id="door_no" name="door_no" placeholder="Door No">
     
-        <label for="Street">Street :</label>
+        <label class = "required" for="Street">Street :</label>
         <input type="text" id="street" name="street" placeholder="Street">
     
-        <label for="District">District :</label>
+        <label class = "required" for="District">District :</label>
         <input type="text" id="district" name="district" placeholder="District">
     
-        <label for="state">Select State:</label>
+        <label class = "required" for="state">Select State:</label>
         <select id="state" name="state" placeholder= "State">
           <optgroup label="Choose Your State" Placeholeder="State">
             <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -147,11 +151,13 @@
             <option value="West_Bengal">West Bengal</option>
         </select>
         
-          <label>Resident:</label>
+          <label class = "required">Resident:</label>
           <input type="checkbox" id="Indian" value="Indian" name="Indian"><label class="light" for="Indian">Indian</label><br>
             <input type="checkbox" id="Non-Resident-Indian" value="Non-Resident-Indian" name="NRI"><label class="light" for="NRI">Non-Resident-Indian</label><br>
-          
-        
+        <br>
+         
+        <label class ="required">Passport Size Photo</label>
+        <input type="file" name="pp_photo" value ="Upload Photo">
         </fieldset>
         <button class="Button" type="submit">Register</button>
       </form>

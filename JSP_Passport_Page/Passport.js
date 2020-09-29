@@ -1,9 +1,14 @@
 function validateForm()
 {
 	var a = document.forms["Form"]["name"].value;
-	if(a == "" ){
+	if(a == ""  ){
 		alert("Please Enter the Name");
 		return false;
+	}else if(a.length < 2)
+	{
+		alert("Please Enter a Valid Name");
+		return false;
+		
 	}
 	
 	var b =document.forms["Form"]["gender"].value;

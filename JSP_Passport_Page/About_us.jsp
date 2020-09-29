@@ -44,3 +44,15 @@
         <span>Ministry of External Affairs, Government of India</span>
     </div>
     </div>
+
+    <h1>
+        In recent years, the Government of India has taken many initiatives to usher in an era of e-Governance to improve the delivery of public services. The National e-Governance Plan (NeGP) includes many high impact e-Governance projects that have been identified as Mission Mode Projects (MMP's). One such project focuses on reforming Passport services in India.
+
+The Ministry of External Affairs (MEA) is responsible for issuance of Passports to Indian Citizens through a network of 36 Passport offices across the Country and 190 Indian Missions and Posts abroad.
+
+A Passport is an essential travel document for those who are traveling abroad for education, tourism, pilgrimage, medical attendance, business purposes and family visits. During the last few years, the growing economy and spreading globalization have led to an increased demand for Passport and related services. This increasing demand for passports and related services is coming from both large cities and smaller towns, creating a need for wider reach and availability. To augment and improve the delivery of passport services to Indian citizens, the Ministry of External Affairs (MEA) launched the Passport Seva Project (PSP) in May 2010.
+
+The project has been implemented in a Public Private Partnership (PPP) mode with Tata Consultancy Services, selected through a public competitive procurement process. Under this program, the sovereign and fiduciary functions like verification, granting and issuing of passport have been retained by MEA. The ownership and strategic control of the core assets including data/information is with MEA.
+
+Passport Seva enables simple, efficient and transparent processes for delivery of passport and related services. Apart from creating a countrywide networked environment for Government staff, it integrates with the State Police for physical verification of applicant's credentials and with India Post for delivery of passports.
+    </h1>
