@@ -67,7 +67,7 @@
           <input type="radio" name="gender" value="female" checked>Female<br>
           <br>
           
-          <label class="required" for="DOB"> Date of Birth:</label>
+          <label class="required" for="DOB" > Date of Birth:</label>
           <input type="date" id="dob" placeholder="(dd/mm/yyyy)" name = "dob">
     
           <label class="required" for="mail">Email:</label>
@@ -118,6 +118,7 @@
         <label class = "required" for="state">Select State:</label>
         <select id="state" name="state" placeholder= "State">
           <optgroup label="Choose Your State" Placeholeder="State">
+          	<option  id ="none" value="Select State"></option>
             <option value="Andhra Pradesh">Andhra Pradesh</option>
             <option value="Arunachal Pradesh">Arunachal Pradesh</option>
             <option value="Assam">Assam</option>
@@ -151,15 +152,17 @@
             <option value="West_Bengal">West Bengal</option>
         </select>
         
-          <label class = "required">Resident:</label>
-          <input type="checkbox" id="Indian" value="Indian" name="Indian"><label class="light" for="Indian">Indian</label><br>
-            <input type="checkbox" id="Non-Resident-Indian" value="Non-Resident-Indian" name="NRI"><label class="light" for="NRI">Non-Resident-Indian</label><br>
+          <label for ="res" id ="res "name="Resident">Disability (Optional)</label>
+          <input type="checkbox" id="Blind" value="Visibility" name="CheckBox"><label class="light" for="blind">Visibility</label><br>
+            <input type="checkbox" id="Hearing" value="Hearing" name="CheckBox"><label class="light" for="NRI">Hearing</label><br>
         <br>
          
         <label class ="required">Passport Size Photo</label>
-        <input type="file" name="pp_photo" value ="Upload Photo">
+        <input type="file" id ="pp_photo" name="pp_photo" value ="Upload Photo">
         </fieldset>
-        <button class="Button" type="submit">Register</button>
+        <button class="Button2" id ="Button2"type="submit">Register</button>
+        
+        <button class="Button2" id="Button2"type="Reset">Reset</button>
       </form>
     
 

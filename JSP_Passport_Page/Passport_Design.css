@@ -12,8 +12,14 @@
   .myslid{
     height: 300px;;
     width: 631px;
+   
     
   }
+  
+  .required:after {
+  content:" *";
+  color: red;
+}
   .Welcome{
     position: absolute;
     top: 50%;
@@ -48,11 +54,6 @@ body
 {
 background-color: rgb(206, 195, 195);
 background-image: url("Bg.jpg");
-}
-
-.required:after {
-  content:" *";
-  color: red;
 }
 
 .Header-Rectangle
@@ -233,6 +234,30 @@ background-image: url("Bg.jpg");
     font-size: 25px;
     color: rgba(75,172,169,1);
   }
+  h6{
+  
+  	margin:0 0 30px 0;
+  	text-align:center;
+  	font-size:"25px";
+  	color:rgba(75,172,169,1);
+  	border-radius:10px;
+  	font-size:15px;
+  	 font-family: 'Varela Round', sans-serif;
+  	
+  	}
+  #about{
+  background-color: white;
+  text-align: left;
+  width: 900px;
+  border: 100px;
+  border-color:  rgba(75,172,169,1);
+  padding: 50px;
+  margin: 20px;
+  border-radius: 50px;
+  }
+  p{
+  text-align: left;
+  }
   
   input[type="text"],
   input[type="password"],
@@ -297,22 +322,52 @@ background-image: url("Bg.jpg");
   }
   
   button {
-    padding: 19px 39px 18px 39px;
+  	
+    padding: 8px 12px 8px 14px;
     color: rgba(75,172,169,1);
     background-color:  white;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
     font-style: normal;
     border-radius: 5px;
-    width: 100%;
+    width: 45%;
     border: none;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.5) inset;
     margin-bottom: 10px;
     transition-duration: 0.4s;
     font-family: 'Varela Round', sans-serif;
+    margin: 0;
+  	position: relative;
   }
   button:hover{
+  background-color: rgb(43, 107, 105);
+    color: white;
+  }
+   #Button2 {
+  	
+    padding: 8px 12px 8px 14px;
+    color: rgba(75,172,169,1);
+    background-color:  white;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 45%;
+    border: none;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.5) inset;
+    margin-bottom: 10px;
+    transition-duration: 0.4s;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+  	position: relative;
+ 	 top: 50%;
+  	left: 13%;
+  	-ms-transform: translate(-20%, -50%);
+  	transform: translate(-20%, -50%);
+  }
+  #Button2:hover{
   background-color: rgb(43, 107, 105);
     color: white;
   }
