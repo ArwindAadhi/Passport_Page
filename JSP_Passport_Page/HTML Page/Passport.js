@@ -109,10 +109,17 @@ function validateForm()
 		alert("Please Enter the District");
 		return false;
 	}
-	var o = document.forms["Form"]["state"]["#none"].value;
-	if(o == "" ){
-		alert("Please select the State");
+	var check;
+	check= document.Form.states.value;
+	if(check == 1){
+		alert("Please select a state")
+	}
+
+	if(document.forms["Form"]["photo"].value == 0){
+		alert("Please Upload a image");
 		return false;
 	}
+
 }
+
 

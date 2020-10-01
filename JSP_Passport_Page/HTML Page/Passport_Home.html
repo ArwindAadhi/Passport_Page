@@ -52,14 +52,14 @@
 
     <marquee>Welcome to Passport Seva. Apply for Passport here and Get it within 1 month after Applied.Operations at select Passport Seva Kendra (PSKs) and Post Office Passport Seva Kendras (POPSKs) have been resumed. Please refer the list of operational PSKs and POPSKs in the Latest News Section. Applicants may reschedule their appointments to the nearest operational PSK/POPSK to avail the services.  </marquee>
 
-    <form name ="Form" action="Registered.jsp" onsubmit= " return validateForm()" method="post" >
+    <form name ="Form" action="Registered.html" onsubmit= " return validateForm()" method="post"  >
   
         <h1>Passport Registration</h1>
         
         <fieldset>
           <legend><span class="number">1</span>Required Details</legend>
           <label class = "required" for="name">Name:</label>
-          <input type="text" id="name" placeholder="Name" name="name">
+          <input type="text" id="name" placeholder="Name" name="name" >
     
           <label class = "required" for="Gender">Gender:</label>
           <input type="radio" name="gender" value="male" checked>Male<br>
@@ -67,16 +67,16 @@
           <br>
           
           <label class="required" for="DOB" > Date of Birth:</label>
-          <input type="date" id="dob" placeholder="(dd/mm/yyyy)" name = "dob">
+          <input type="date" id="dob" placeholder="(dd/mm/yyyy)" name = "dob" >
     
           <label class="required" for="mail">Email:</label>
           <input type="email" id="mail" name="user_email" placeholder="Email">
           
           <label class = "required" for="password">Password:</label>
-          <input type="password" id="password" name="user_password" Placeholder="Password">
+          <input type="password" id="password" name="user_password" Placeholder="Password" >
           
           <label class = "required" for="Father Name">Father Name:</label>
-          <input type="text" id="father_name" name="father_name" placeholder="Father Name">
+          <input type="text" id="father_name" name="father_name" placeholder="Father Name" >
     
           <label class = "required" for="Mother Name">Mother Name:</label>
           <input type="text" id="mother_name" name="mother_name" placeholder="Mother Name">
@@ -86,7 +86,7 @@
           
     
           <label class = "required" for="aadhar_number">Aadhar Number:</label>
-          <input type="text" id="aadhar_number" name="aadhar_number" placeholder="Aadhar Number">
+          <input type="text" id="aadhar_number" name="aadhar_number" placeholder="Aadhar Number" >
         
           <label class = "required" for="state">Martial Status:</label>
         <select id="martial_status" name="martial_status" >
@@ -95,29 +95,29 @@
             
             
     	 <label class= "required" for="Age"> Age:</label>
-		 <input type="number" id="age" name="age" placeholder="Age">        
+		 <input type="number" id="age" name="age" placeholder="Age" >        
         </fieldset>
         
         <fieldset>
           <legend><span class="number">2</span>Address Details</legend>
           <label class = "required" for="address">Address:</label>
-          <textarea id="Addres" placeholder="Address" name="Address"></textarea>
+          <textarea id="Addres" placeholder="Address" name="Address" ></textarea>
         </fieldset>
         <fieldset>
     
         <label class = "required" for="door_no">Door No :</label>
-        <input type="text" id="door_no" name="door_no" placeholder="Door No">
+        <input type="text" id="door_no" name="door_no" placeholder="Door No" >
     
         <label class = "required" for="Street">Street :</label>
-        <input type="text" id="street" name="street" placeholder="Street">
+        <input type="text" id="street" name="street" placeholder="Street" >
     
         <label class = "required" for="District">District :</label>
-        <input type="text" id="district" name="district" placeholder="District">
+        <input type="text" id="district" name="district" placeholder="District" >
     
-        <label class = "required" for="state" >Select State:</label>
-        <select id="state" name="state" placeholder= "State" required>
-          <optgroup label="Choose Your State" Placeholeder="State" required></optgroup>
-          	<option  id ="none" value="Select State"></option>
+        <label class = "required" for="states" >Select State:</label>
+        <select id="states" name="states"  onclick="change()" placeholder= "State" >
+          <optgroup label="Choose Your State" Placeholeder="State" ></optgroup>
+          	<option value="1">Select</option>
             <option value="Andhra Pradesh">Andhra Pradesh</option>
             <option value="Arunachal Pradesh">Arunachal Pradesh</option>
             <option value="Assam">Assam</option>
@@ -151,13 +151,14 @@
             <option value="West_Bengal">West Bengal</option>
         </select>
         
+        
           <label for ="res" id ="res "name="Resident">Disability (Optional)</label>
           <input type="checkbox" id="Blind" value="Visibility" name="CheckBox"><label class="light" for="blind">Visibility</label><br>
             <input type="checkbox" id="Hearing" value="Hearing" name="CheckBox"><label class="light" for="NRI">Hearing</label><br>
-        <br>
-         
+        <br>    
+        
         <label class ="required">Passport Size Photo</label>
-        <input type="file" id ="pp_photo" name="pp_photo" value ="Upload Photo" required>
+       <input type="file" id ="photo" name="photo" value ="Upload Photo" >
         </fieldset>
         <button class="Button2" id ="Button2"type="submit">Register</button>
         
