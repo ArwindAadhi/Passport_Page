@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <link href="Passport_Design.css" rel="stylesheet" type="text/css">
 <title>Registration Successful</title>
