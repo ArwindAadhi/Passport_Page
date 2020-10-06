@@ -9,6 +9,11 @@
     font-family: 'Do Hyeon', sans-serif;
 
   }
+  .html{
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
+  }
   .myslid{
     height: 300px;;
     width: 631px;
@@ -52,8 +57,11 @@ h2{
     
 body
 {
-background-color: rgb(206, 195, 195);
-background-image: url("Bg.jpg");
+background-color:white;
+max-width: 100%;
+overflow-x: hidden;
+max-height: 100%;
+/* background-image: url("Bg.jpg"); */
 }
 
 .Header-Rectangle
@@ -67,6 +75,7 @@ background-image: url("Bg.jpg");
     top: 0px;
   
 }
+
 #Header-Rectangle {
     fill: rgba(38,155,151,1);
 }
@@ -213,19 +222,12 @@ background-image: url("Bg.jpg");
     color:white;
   }
   
-  form {
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: rgba(75,172,169,1);
-    border-radius: 8px;
-  }
-  
+ 
   h1 {
     margin: 0 0 30px 0;
     text-align: center;
     font-size: 25px;
-    color: white;
+    color: black
   }
 
   h4{
@@ -279,7 +281,7 @@ background-image: url("Bg.jpg");
     margin: 0;
     outline: 0;
     padding: 15px;
-    width: 100%;
+    width: 40%;
     background-color: #e8eeef;
     color:  rgba(75,172,169,1);
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -289,7 +291,8 @@ background-image: url("Bg.jpg");
   
   input[type="radio"],
   input[type="checkbox"] {
-    margin: 0 4px 8px 0;
+    margin: 0 20px 8px 0;
+    color: black;
   }
   
   select {
@@ -354,18 +357,19 @@ background-image: url("Bg.jpg");
     font-size: 18px;
     text-align: center;
     font-style: normal;
-    border-radius: 5px;
-    width: 45%;
-    border: none;
+    border-radius: 10px;
+    width: 15%;
+    border: .5px solid black;
+    border-color: black;
     border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.5) inset;
+    box-shadow: 0 -1px 0 rgba(83, 79, 79, 0.1) inset;
     margin-bottom: 10px;
     transition-duration: 0.4s;
     font-family: 'Varela Round', sans-serif;
     margin: 0;
   	position: relative;
- 	 top: 50%;
-  	left: 13%;
+ 	  top: 50%;
+  	left: 33%;
   	-ms-transform: translate(-20%, -50%);
   	transform: translate(-20%, -50%);
   }
@@ -382,11 +386,13 @@ background-image: url("Bg.jpg");
   legend {
     font-size: 1.4em;
     margin-bottom: 10px;
+    color: black;
   }
   
   label {
     display: block;
     margin-bottom: 8px;
+    color:black;
   }
   
   label.light {
@@ -409,13 +415,7 @@ background-image: url("Bg.jpg");
     font-family: 'Varela Round', sans-serif;
   }
   
-  @media screen and (min-width: 480px) {
-  
-    form {
-      max-width: 450px;
-    }
-  
-  }
+ 
 
   marquee{
   font-size: 15px;
@@ -433,5 +433,105 @@ background-image: url("Bg.jpg");
 #slide{
 align-items: center;
   }
+
+.Address_details{
+  position: relative;
+  right: -700px;
+  top: -1135px;
+  align-items: left;
+}
+
+.Required_details{
+  position: relative;
+  left: 50px;
+
+}
+
+.Gender{
+  color: black;
+}
+
+.wrapper{
+  display: inline-flex;
+  background: #fff;
+  height: 80px;
+  width: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+}
+.wrapper .option{
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background:  rgba(75,172,169,1);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color:  rgba(75,172,169,1);
+  background:  rgba(75,172,169,1);
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 15px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+._Buttons_{
+  position: relative;
+  bottom: 1100px;
+  right: -70px;
   
-  
+
+}
+
+@media screen and (min-width:900px){
+  form{
+    max-width: 1200px;
+    max-height: 1200px;
+    
+  }
+}
