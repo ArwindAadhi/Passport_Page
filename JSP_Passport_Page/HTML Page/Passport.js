@@ -1,39 +1,46 @@
-
 function validateForm()
 {
+	var iChars = "[!@#$%^&*()+=\\-\\[\\]\\\';,./{}|\":<>?]{1}";
 	var a = document.forms["Form"]["name"].value;
-	if(a == ""  ){
-		alert("Please Enter the Name");
-		return false;
-	}else if(a.length < 3){
-		alert("Please Enter a Valid Name");
-		return false;
-		
+	if(a == ""){
+			alert("Please Enter or Check the Name");
+			document.getElementById("name").focus();
+	 	 	return false;
 	}
-	
-	var b =document.forms["Form"]["gender"].value;
-	if(b == ""){
-		alert("Please Select the Gender");
-		return false;
-		
+	else if(a.length < 3){
+			alert("Please Enter a Valid Name");
+			document.getElementById("name").focus();
+	 		return false;
+	}
+	else if(!isNaN(a)){
+			alert("Name cannot have Numbers");
+			document.getElementById("name").focus();
+			return false;
+	}
+	else if (a.search(iChars) != -1){
+			alert("Name cannot  have special characters");
+			document.getElementById("name").focus();
+			return false;
 	}
 	
 	var y =document.forms["Form"]["dob"].value;
 	if(y == ""){
 		alert("Please Enter Date of Birth");
+		document.getElementById("dob").focus();
 		return false;
 	}
 		
 	
 	var c =document.forms["Form"]["user_email"].value;
 	if(c == ""){
-		alert("Please Enter or check the Email")
+		alert("Please Enter or check the Email");
+		document.getElementById("mail").focus();
 		}else
-      {
+    {
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if(c.match(mailformat))
         {
-        document.Form.user_email.focus();
+		document.Form.user_email.focus();
         //return true;
         }
         else
@@ -43,29 +50,81 @@ function validateForm()
         return false;
         }
       
-		}
-	
+	}
+	var cd = "/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z!@#$%^&*]{7,15}$/" ;
 	var d =document.forms["Form"]["user_password"].value;
 	if(d == ""){
 		alert("Please enter the password");
+		document.getElementById("password").focus();
+		return false;
+	}
+	else if(d.length < 8){
+		alert("Password must be 8 characters long");
+		document.getElementById("password").focus();
 		return false;
 	}
 	
+	else if( !d.match(/[0-9]/)){
+		alert("Password must have an number");
+		document.getElementById("password").focus();
+		return false;
+	}
+	
+
+	var iChars = "[!@#$%^&*()+=\\-\\[\\]\\\';,./{}|\":<>?]{1}";
 	var e = document.forms["Form"]["father_name"].value;
-	if(e == "" ){
-		alert("Please Enter the  Father Name");
-		return false;
+	if(e == ""){
+			alert("Please Enter or Check the Father Name");
+			document.getElementById("father_name").focus();
+	 	 	return false;
 	}
+	else if(e.length < 3){
+			alert("Please Enter a Valid Father Name");
+			document.getElementById("father_name").focus();
+	 		return false;
+	}
+	else if(!isNaN(e)){
+			alert("Father Name cannot have Numbers");
+			document.getElementById("father_name").focus();
+			return false;
+	}
+	else if (e.search(iChars) != -1){
+			alert("Father Name cannot  have special characters");
+			document.getElementById("father_name").focus();
+			return false;
+	}
+
 	
+	var iChars = "[!@#$%^&*()+=\\-\\[\\]\\\';,./{}|\":<>?]{1}";
 	var f = document.forms["Form"]["mother_name"].value;
-	if(f == "" ){
-		alert("Please Enter the Mother Name");
-		return false;
+	if(f == ""){
+			alert("Please Enter or Check the Mother Name");
+			document.getElementById("mother_name").focus();
+	 	 	return false;
 	}
-	
+	else if(f.length < 3){
+			alert("Please Enter a Valid Mother Name");	
+			document.getElementById("mother_name").focus();
+	 		return false;
+	}
+	else if(!isNaN(f)){
+			alert("Mother Name cannot have Numbers");
+			document.getElementById("mother_name").focus();
+			return false;
+	}
+	else if (f.search(iChars) != -1){
+			alert("Mother Name cannot  have special characters");
+			document.getElementById("mother_name").focus();
+			return false;
+	}
+
 	var g = document.forms["Form"]["pan_number"].value;
 	if(g == "" || g.length >10 || g.length<10){
 		alert("Please Enter the PAN Number Or Check the PAN Number");
+		return false;
+	}else if((g.search(iChars) != -1)){
+		alert("PAN number cannot  have special characters");
+		document.getElementById("pan_number").focus();
 		return false;
 	}
 	
@@ -73,53 +132,180 @@ function validateForm()
 	if(h == "" ||h.length >12 || h.length<12 ){
 		alert("Please Enter the Aadhar Number or Check the Aadhar number");
 		return false;
+	}else if(isNaN(h)) {
+		alert("Please check the Aadhar Number");
+		return false;
 	}
 	
-	var i = document.forms["Form"]["martial_status"].value;
-	if(i == "" ){
+	var i = document.forms["Form"]["martial_status"].options.value;
+	if(i == 1 ){
 		alert("Please Enter the Martial Status");
 		return false;
 	}
 	
-	var j = document.forms["Form"]["age"].value;
-	if(j == "" ){
-		alert("Please Enter the Age");
-		return false;
-	}
+	// var j = document.forms["Form"]["age"].value;
+	// if(j == "" ){
+	// 	alert("Please Enter the Age");
+	// 	document.getElementById("age").focus();
+	// 	return false;
+	// }
 	
-	var k = document.forms["Form"]["Address"].value;
-	if(k == "" ){
-		alert("Please Enter the Address");
-		return false;
+	var t = document.getElementById("Address").value;
+	if (t == ""){
+		alert("Enter the Address");
+	 	return false;
 	}
-	
+	 
 	var l = document.forms["Form"]["door_no"].value;
 	if(l == "" ){
 		alert("Please Enter the Door No");
+		return false;
+	}else if(isNaN(l)) {
+		alert("Please check the Door Number");
 		return false;
 	}
 	
 	var m = document.forms["Form"]["street"].value;
 	if(m == "" ){
-		alert("Please Enter the Street");
-		return false;
+			alert("Please Enter the Street");
+			return false;
 	}
+
+	var iChars = "[!@#$%^&*()+=\\-\\[\\]\\\';,./{}|\":<>?]{1}";
 	var n = document.forms["Form"]["district"].value;
-	if(n == "" ){
+	if(n == ""){
 		alert("Please Enter the District");
 		return false;
 	}
-	var check;
-	check= document.Form.states.value;
-	if(check == 1){
-		alert("Please select a state")
+	else if(!isNaN(n) || n.search(iChars) != -1){
+		alert("Please enter a valid District Name")
 	}
-
-	if(document.forms["Form"]["photo"].value == 0){
-		alert("Please Upload a image");
+	
+	var pc = document.getElementById("Pincode").value
+	if(isNaN(pc) || pc == "" || pc.length < 6 || pc.length > 6) {
+		alert("Please check the Pincode");
 		return false;
 	}
 
+	
+	var result = document.getElementById('states').value;
+	if (result == "0") {
+		alert("Please Select the State");
+	}
+	
+	var pn = document.getElementById("Phone_Number").value
+	if(isNaN(pn) || pn == "" || pn.length < 10 || pn.length > 10) {
+		alert("Please check the Phone Number");
+		return false;
+	}
+	var fileInput = document.getElementById('photo');
+    var filePath = fileInput.value;
+    var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
+	if(document.forms["Form"]["photo"].value == 0){
+		alert("Please Upload a Image");
+		return false;
+	}else if(!allowedExtensions.exec(filePath)){
+        alert('Please upload file having extensions .jpeg/.jpg/.png/.gif only.');
+        fileInput.value = '';
+        return false;
+    }
+
 }
 
+//Phone Number
+// {
+// 	var phoneno = /^\d{10}$/;
+// 	if((inputtxt.value.match(phoneno))
+// 		  {
+// 		return true;
+// 		  }
+// 		else
+// 		  {
+// 		  alert("message");
+// 		  return false;
+// 		  }
+//   }
 
+//Name and address
+//var TCode = document.getElementById('address').value;
+
+//if( /[^a-zA-Z0-9\-\/]/.test( TCode ) ) {
+//	alert('Input is not alphanumeric');
+//	return false;
+//}
+
+//DATE
+// {
+// 	var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+// 	// Match the date format through regular expression
+// 	if(inputText.value.match(dateformat))
+// 	{
+// 	document.form1.text1.focus();
+// 	//Test which seperator is used '/' or '-'
+// 	var opera1 = inputText.value.split('/');
+// 	var opera2 = inputText.value.split('-');
+// 	lopera1 = opera1.length;
+// 	lopera2 = opera2.length;
+// 	// Extract the string into month, date and year
+// 	if (lopera1>1)
+// 	{
+// 	var pdate = inputText.value.split('/');
+// 	}
+// 	else if (lopera2>1)
+// 	{
+// 	var pdate = inputText.value.split('-');
+// 	}
+// 	var dd = parseInt(pdate[0]);
+// 	var mm  = parseInt(pdate[1]);
+// 	var yy = parseInt(pdate[2]);
+	// Create list of days of a month [assume there is no leap year by default]
+	// var ListofDays = [31,28,31,30,31,30,31,31,30,31,30,31];
+	// if (mm==1 || mm>2)
+	// {
+	// if (dd>ListofDays[mm-1])
+	// {
+	// alert('Invalid date format!');
+	// return false;
+	// }
+	// }
+	// if (mm==2)
+	// {
+	// var lyear = false;
+	// if ( (!(yy % 4) && yy % 100) || !(yy % 400)) 
+	// {
+	// lyear = true;
+	// }
+	// if ((lyear==false) && (dd>=29))
+	// {
+	// alert('Invalid date format!');
+	// return false;
+	// }
+	// if ((lyear==true) && (dd>29))
+	// {
+	// alert('Invalid date format!');
+	// return false;
+	// }
+	// }
+	// }
+	// else
+	// {
+	// alert("Invalid date format!");
+	// document.form1.text1.focus();
+	// return false;
+	// }
+	// }
+
+	// password
+	// { 
+	// 	var paswd=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+	// 	if(inputtxt.value.match(paswd)) 
+	// 	{ 
+	// 	alert('Correct, try another...')
+	// 	return true;
+	// 	}
+	// 	else
+	// 	{ 
+	// 	alert('Wrong...!')
+	// 	return false;
+	// 	}
+	// 	} 
