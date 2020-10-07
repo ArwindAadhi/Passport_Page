@@ -7,6 +7,19 @@
 <meta charset="ISO-8859-1">
 <title>Passport Home</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script> 
+$(document).ready(function () { 	$("#dob").change(function () 
+    {
+        var start_date = new Date($("#dob").val());
+        var date = new Date();
+        var end_date = new Date(start_date);
+        end_date.setFullYear (date.getFullYear()-start_date.getFullYear()); $("#age").val(end_date.getFullYear());
+    });
+});
+</script>
+
 <script src=    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">  
 </script> 
 <body>
@@ -55,9 +68,9 @@
     <marquee>Welcome to Passport Seva. Apply for Passport here and Get it within 1 month after Applied.Operations at select Passport Seva Kendra (PSKs) and Post Office Passport Seva Kendras (POPSKs) have been resumed. Please refer the list of operational PSKs and POPSKs in the Latest News Section. Applicants may reschedule their appointments to the nearest operational PSK/POPSK to avail the services.  </marquee>
 
 <form name ="Form" action="Registered.html" onsubmit= " return validateForm()" method="post"  >
-  
-    <br><br><br><br><h1>Passport Registration</h1><br><br><br><br>
-        
+    
+    <br><br><br><br><h1>Passport Registration</h1><hr class="new4"><br><br><br><br>
+     
         <fieldset class="Required_details">
             
             <legend><span class="number">1</span>Required Details</legend>
@@ -110,8 +123,8 @@
                     </select>
             
             
-    	        <!-- <label class= "required" for="Age"> Age:</label>
-		        <input type="number" id="age" name="age" placeholder="Age" >         -->
+    	        <label for ="Age"> Age:</label>
+		        <input type="number" id="age" name="age" placeholder="Age"  readonly>         
         </fieldset>
 
     <div class="Address_details">

@@ -437,7 +437,7 @@ align-items: center;
 .Address_details{
   position: relative;
   right: -700px;
-  top: -1135px;
+  top: -1235px;
   align-items: left;
 }
 
@@ -534,4 +534,9 @@ input[type="radio"]{
     max-height: 1200px;
     
   }
+}
+
+hr.new4 {
+  border: 1px solid rgba(75,172,169,1);
+  
 }

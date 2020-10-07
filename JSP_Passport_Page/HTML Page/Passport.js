@@ -1,3 +1,4 @@
+
 function validateForm()
 {
 	var iChars = "[!@#$%^&*()+=\\-\\[\\]\\\';,./{}|\":<>?]{1}";
@@ -22,15 +23,14 @@ function validateForm()
 			document.getElementById("name").focus();
 			return false;
 	}
-	
+
 	var y =document.forms["Form"]["dob"].value;
 	if(y == ""){
 		alert("Please Enter Date of Birth");
 		document.getElementById("dob").focus();
 		return false;
 	}
-		
-	
+
 	var c =document.forms["Form"]["user_email"].value;
 	if(c == ""){
 		alert("Please Enter or check the Email");
@@ -49,8 +49,9 @@ function validateForm()
         document.Form.user_email.focus();
         return false;
         }
-      
+
 	}
+
 	var cd = "/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z!@#$%^&*]{7,15}$/" ;
 	var d =document.forms["Form"]["user_password"].value;
 	if(d == ""){
@@ -63,13 +64,13 @@ function validateForm()
 		document.getElementById("password").focus();
 		return false;
 	}
-	
+
 	else if( !d.match(/[0-9]/)){
 		alert("Password must have an number");
 		document.getElementById("password").focus();
 		return false;
 	}
-	
+
 
 	var iChars = "[!@#$%^&*()+=\\-\\[\\]\\\';,./{}|\":<>?]{1}";
 	var e = document.forms["Form"]["father_name"].value;
@@ -94,7 +95,7 @@ function validateForm()
 			return false;
 	}
 
-	
+
 	var iChars = "[!@#$%^&*()+=\\-\\[\\]\\\';,./{}|\":<>?]{1}";
 	var f = document.forms["Form"]["mother_name"].value;
 	if(f == ""){
@@ -103,7 +104,7 @@ function validateForm()
 	 	 	return false;
 	}
 	else if(f.length < 3){
-			alert("Please Enter a Valid Mother Name");	
+			alert("Please Enter a Valid Mother Name");
 			document.getElementById("mother_name").focus();
 	 		return false;
 	}
@@ -127,7 +128,7 @@ function validateForm()
 		document.getElementById("pan_number").focus();
 		return false;
 	}
-	
+
 	var h = document.forms["Form"]["aadhar_number"].value;
 	if(h == "" ||h.length >12 || h.length<12 ){
 		alert("Please Enter the Aadhar Number or Check the Aadhar number");
@@ -136,26 +137,26 @@ function validateForm()
 		alert("Please check the Aadhar Number");
 		return false;
 	}
-	
+
 	var i = document.forms["Form"]["martial_status"].options.value;
 	if(i == 1 ){
 		alert("Please Enter the Martial Status");
 		return false;
 	}
-	
+
 	// var j = document.forms["Form"]["age"].value;
 	// if(j == "" ){
 	// 	alert("Please Enter the Age");
 	// 	document.getElementById("age").focus();
 	// 	return false;
 	// }
-	
+
 	var t = document.getElementById("Address").value;
 	if (t == ""){
 		alert("Enter the Address");
 	 	return false;
 	}
-	 
+
 	var l = document.forms["Form"]["door_no"].value;
 	if(l == "" ){
 		alert("Please Enter the Door No");
@@ -164,7 +165,7 @@ function validateForm()
 		alert("Please check the Door Number");
 		return false;
 	}
-	
+
 	var m = document.forms["Form"]["street"].value;
 	if(m == "" ){
 			alert("Please Enter the Street");
@@ -180,19 +181,19 @@ function validateForm()
 	else if(!isNaN(n) || n.search(iChars) != -1){
 		alert("Please enter a valid District Name")
 	}
-	
+
 	var pc = document.getElementById("Pincode").value
 	if(isNaN(pc) || pc == "" || pc.length < 6 || pc.length > 6) {
 		alert("Please check the Pincode");
 		return false;
 	}
 
-	
+
 	var result = document.getElementById('states').value;
 	if (result == "0") {
 		alert("Please Select the State");
 	}
-	
+
 	var pn = document.getElementById("Phone_Number").value
 	if(isNaN(pn) || pn == "" || pn.length < 10 || pn.length > 10) {
 		alert("Please check the Phone Number");
@@ -205,107 +206,12 @@ function validateForm()
 		alert("Please Upload a Image");
 		return false;
 	}else if(!allowedExtensions.exec(filePath)){
-        alert('Please upload file having extensions .jpeg/.jpg/.png/.gif only.');
+        alert('Please upload file having extensions .jpeg/.jpg/.png only.');
         fileInput.value = '';
         return false;
     }
 
 }
 
-//Phone Number
-// {
-// 	var phoneno = /^\d{10}$/;
-// 	if((inputtxt.value.match(phoneno))
-// 		  {
-// 		return true;
-// 		  }
-// 		else
-// 		  {
-// 		  alert("message");
-// 		  return false;
-// 		  }
-//   }
 
-//Name and address
-//var TCode = document.getElementById('address').value;
-
-//if( /[^a-zA-Z0-9\-\/]/.test( TCode ) ) {
-//	alert('Input is not alphanumeric');
-//	return false;
-//}
-
-//DATE
-// {
-// 	var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
-// 	// Match the date format through regular expression
-// 	if(inputText.value.match(dateformat))
-// 	{
-// 	document.form1.text1.focus();
-// 	//Test which seperator is used '/' or '-'
-// 	var opera1 = inputText.value.split('/');
-// 	var opera2 = inputText.value.split('-');
-// 	lopera1 = opera1.length;
-// 	lopera2 = opera2.length;
-// 	// Extract the string into month, date and year
-// 	if (lopera1>1)
-// 	{
-// 	var pdate = inputText.value.split('/');
-// 	}
-// 	else if (lopera2>1)
-// 	{
-// 	var pdate = inputText.value.split('-');
-// 	}
-// 	var dd = parseInt(pdate[0]);
-// 	var mm  = parseInt(pdate[1]);
-// 	var yy = parseInt(pdate[2]);
-	// Create list of days of a month [assume there is no leap year by default]
-	// var ListofDays = [31,28,31,30,31,30,31,31,30,31,30,31];
-	// if (mm==1 || mm>2)
-	// {
-	// if (dd>ListofDays[mm-1])
-	// {
-	// alert('Invalid date format!');
-	// return false;
-	// }
-	// }
-	// if (mm==2)
-	// {
-	// var lyear = false;
-	// if ( (!(yy % 4) && yy % 100) || !(yy % 400)) 
-	// {
-	// lyear = true;
-	// }
-	// if ((lyear==false) && (dd>=29))
-	// {
-	// alert('Invalid date format!');
-	// return false;
-	// }
-	// if ((lyear==true) && (dd>29))
-	// {
-	// alert('Invalid date format!');
-	// return false;
-	// }
-	// }
-	// }
-	// else
-	// {
-	// alert("Invalid date format!");
-	// document.form1.text1.focus();
-	// return false;
-	// }
-	// }
-
-	// password
-	// { 
-	// 	var paswd=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
-	// 	if(inputtxt.value.match(paswd)) 
-	// 	{ 
-	// 	alert('Correct, try another...')
-	// 	return true;
-	// 	}
-	// 	else
-	// 	{ 
-	// 	alert('Wrong...!')
-	// 	return false;
-	// 	}
-	// 	} 
+//<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
