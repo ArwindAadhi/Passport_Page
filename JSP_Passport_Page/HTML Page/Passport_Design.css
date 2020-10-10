@@ -54,15 +54,22 @@ h2{
   text-align: center;
   color: rgba(38,155,151,1);
 }
+
     
 body
 {
 background-color:white;
 max-width: 100%;
-overflow-x: hidden;
 max-height: 100%;
-/* background-image: url("Bg.jpg"); */
+background-image: url("White_bg.jpg");
+/* background-image: url("Indian_pp.jpg");
+background-size: 1650px;
+background-repeat: no-repeat;
+background-position: center; */
+
+
 }
+
 
 .Header-Rectangle
 {
@@ -220,13 +227,15 @@ max-height: 100%;
   body {
     font-family: 'Varela Round', sans-serif;
     color:white;
+    overflow-x: hidden;
+    
   }
   
  
   h1 {
     margin: 0 0 30px 0;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     color: black
   }
 
@@ -283,8 +292,8 @@ max-height: 100%;
     padding: 15px;
     width: 40%;
     background-color: #e8eeef;
-    color:  rgba(75,172,169,1);
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    color: black;
+    box-shadow:0 0 5px rgb(37, 41, 41);
     margin-bottom: 30px;
     border-radius: 8px;
   }
@@ -360,8 +369,8 @@ max-height: 100%;
     border-radius: 10px;
     width: 15%;
     border: .5px solid black;
-    border-color: black;
-    border-width: 1px 1px 3px;
+    /* border-color: black;
+    border-width: 1px 1px 3px; */
     box-shadow: 0 -1px 0 rgba(83, 79, 79, 0.1) inset;
     margin-bottom: 10px;
     transition-duration: 0.4s;
@@ -369,7 +378,8 @@ max-height: 100%;
     margin: 0;
   	position: relative;
  	  top: 50%;
-  	left: 33%;
+    left: 33%;
+    box-shadow:0 0 5px rgb(37, 41, 41);
   	-ms-transform: translate(-20%, -50%);
   	transform: translate(-20%, -50%);
   }
@@ -432,13 +442,28 @@ max-height: 100%;
 
 #slide{
 align-items: center;
-  }
+position: relative;
+left: 90px;
+right: 80px;
+}
 
 .Address_details{
   position: relative;
   right: -700px;
-  top: -1235px;
+  top: -1320px;
   align-items: left;
+}
+.head{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#txt{
+  color: rgb(255, 0, 0);
+  
+  position: relative;
+  align-items: right;
 }
 
 .Required_details{
@@ -522,7 +547,7 @@ input[type="radio"]{
 }
 ._Buttons_{
   position: relative;
-  bottom: 1100px;
+  bottom: 1250px;
   right: -70px;
   
 
@@ -540,3 +565,18 @@ hr.new4 {
   border: 1px solid rgba(75,172,169,1);
   
 }
+
+.PDF{
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* .navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */

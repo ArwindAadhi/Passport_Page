@@ -67,3 +67,20 @@ The Ministry of External Affairs (MEA) is responsible for issuance of Passports 
 Passport Seva enables simple, efficient and transparent processes for delivery of passport and related services. Apart from creating a countrywide networked environment for Government staff, it integrates with the State Police for physical verification of applicant's credentials and with India Post for delivery of passports.
    </p> </h6>
     </div>
+
+    @media screen and (min-width: 480px) {
+  
+        form {
+          max-width: 450px;
+        }
+      
+      }
+
+      form {
+        max-width: 300px;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background: rgba(75,172,169,1);
+        border-radius: 8px;
+      }
+      

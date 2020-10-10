@@ -4,8 +4,9 @@ function validateForm()
 	var iChars = "[!@#$%^&*()+=\\-\\[\\]\\\';,./{}|\":<>?]{1}";
 	var a = document.forms["Form"]["name"].value;
 	if(a == ""){
-			alert("Please Enter or Check the Name");
+			// alert("Please Enter or Check the Name");
 			document.getElementById("name").focus();
+			document.getElementById('name').innerHTML = " Please Enter Your Name *"
 	 	 	return false;
 	}
 	else if(a.length < 3){
@@ -30,11 +31,22 @@ function validateForm()
 		document.getElementById("dob").focus();
 		return false;
 	}
+	
+	var j = document.forms["Form"]["age"].value;
+	 if(j < 0 ){
+		 alert("Please Enter a valid Date of Birth");
+		 document.getElementById("dob").focus();
+	 	return false;
+	}else if(j == 0){
+		alert("Applicant must be 1 year old to apply");
+		return false;
+	}
 
 	var c =document.forms["Form"]["user_email"].value;
 	if(c == ""){
 		alert("Please Enter or check the Email");
 		document.getElementById("mail").focus();
+		return false;
 		}else
     {
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -144,12 +156,7 @@ function validateForm()
 		return false;
 	}
 
-	// var j = document.forms["Form"]["age"].value;
-	// if(j == "" ){
-	// 	alert("Please Enter the Age");
-	// 	document.getElementById("age").focus();
-	// 	return false;
-	// }
+	
 
 	var t = document.getElementById("Address").value;
 	if (t == ""){

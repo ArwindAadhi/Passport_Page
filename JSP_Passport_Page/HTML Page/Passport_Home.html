@@ -2,12 +2,15 @@
 <!DOCTYPE html>
 <html>
 <link href="Passport_Design.css" rel="stylesheet" type="text/css">
-<script src="Passport.js"></script>
+<script src="Js_new.js"></script>
 <head>
 <meta charset="ISO-8859-1">
 <title>Passport Home</title>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<link href="Passport_Design.css" rel="stylesheet" type="text/css">
 
 <script> 
 $(document).ready(function () { 	$("#dob").change(function () 
@@ -19,45 +22,87 @@ $(document).ready(function () { 	$("#dob").change(function ()
     });
 });
 </script>
+        <script
+            if ($(window).width() > 992
+            {
+                $(window).scroll(function(){  
+                if ($(this).scrollTop() > 40) {
+                $('#navbar_top').addClass("fixed-top");
+                // add padding top to show content behind navbar
+                $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+                }else{
+                $('#navbar_top').removeClass("fixed-top");
+                // remove padding top from body
+                $('body').css('padding-top', '0');
+                }   
+                });
+            }
+        </script>
 
-<script src=    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">  
-</script> 
-<body>
-<div class="Header", style="font-family: Verdana, Geneva, Tahoma, sans-serif;">  
-    <svg class="Header-Rectangle">
-        <rect id="Header-Rectangle" rx="0" ry="0" x="0" y="0" width="1280" height="90">
-        </rect>
-    </svg>
-    <div id="Passport_Seva">
-        <span>Passport Seva</span>
-    </div>
-    <div id="Logo">
-        <svg class="Circle">
-            <ellipse id="Circle" rx="11.5" ry="11.5" cx="11.5" cy="11.5">
-            </ellipse>
-        </svg>
-        <svg class="Triangle" viewBox="0 0 37 31">
-            <path id="Triangle" d="M 18.49999809265137 0 L 37 31 L 0 31 Z">
-            </path>
-        </svg>
-    </div>
-    <a  href="Home.html" div id="Home">
-        <span>Home</a></span>
+        <script>
+                function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+                }
 
-    <a href ="About_us.html" div id="About_Us">
+                function checkTime(i) {
+                    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                    return i;
+                }       
+        </script>    
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">  
+            </script> 
+
+    <body onload="startTime()">
+<div class="fixed-top">
+    <div class="Header", style="font-family: Verdana, Geneva, Tahoma, sans-serif;">  
+            <svg class="Header-Rectangle">
+                <rect id="Header-Rectangle" rx="0" ry="0" x="0" y="0" width="1280" height="90">
+                </rect>
+            </svg>
+            <div id="Passport_Seva">
+                <span>Passport Seva</span>
+            </div>
+            <div id="Logo">
+                <svg class="Circle">
+                    <ellipse id="Circle" rx="11.5" ry="11.5" cx="11.5" cy="11.5">
+                    </ellipse>
+                </svg>
+                <svg class="Triangle" viewBox="0 0 37 31">
+                    <path id="Triangle" d="M 18.49999809265137 0 L 37 31 L 0 31 Z">
+                    </path>
+                </svg>
+            </div>
+
+        <a  href="Home.html" div id="Home">
+            <span>Home
+        </a></span>
+
+        <a href ="About_us.html" div id="About_Us">
         <span>About Us</a></span>
     
-    <div id="Passport_Offices">
-        <span>Passport Offices</span>
-    </div>
-    <div id="Contact_Us">
-        <span>Contact Us</span>
-    </div>
+        <div id="Passport_Offices">
+            <span>Passport Offices</span>
+        </div>
+        <div id="Contact_Us">
+            <span>Contact Us</span>
+        </div>
         <div id="Ministry_of_External_Affairs_G">
             <span>Ministry of External Affairs, Government of India</span>
         </div>
-        </div>
     </div>
+</div>
+ 
+
     <br>
     <br>
     <br>
@@ -65,12 +110,14 @@ $(document).ready(function () { 	$("#dob").change(function ()
     <br>
     <br>
 
-    <marquee>Welcome to Passport Seva. Apply for Passport here and Get it within 1 month after Applied.Operations at select Passport Seva Kendra (PSKs) and Post Office Passport Seva Kendras (POPSKs) have been resumed. Please refer the list of operational PSKs and POPSKs in the Latest News Section. Applicants may reschedule their appointments to the nearest operational PSK/POPSK to avail the services.  </marquee>
+
+<marquee>Welcome to Passport Seva. Apply for Passport here and Get it within 1 month after Applied.Operations at select Passport Seva Kendra (PSKs) and Post Office Passport Seva Kendras (POPSKs) have been resumed. Please refer the list of operational PSKs and POPSKs in the Latest News Section. Applicants may reschedule their appointments to the nearest operational PSK/POPSK to avail the services.  </marquee>
 
 <form name ="Form" action="Registered.html" onsubmit= " return validateForm()" method="post"  >
-    
-    <br><br><br><br><h1>Passport Registration</h1><hr class="new4"><br><br><br><br>
-     
+    <div id="txt">Time:</div>
+    <br><br><br><br><h1>Passport Registration</h1><br><br><br><br>
+
+        
         <fieldset class="Required_details">
             
             <legend><span class="number">1</span>Required Details</legend>
@@ -95,18 +142,10 @@ $(document).ready(function () { 	$("#dob").change(function ()
 
                 <label class="required" for="DOB" > Date of Birth:</label>
                 <input type="date" id="dob" placeholder="(dd/mm/yyyy)" name = "dob" >
-                <!-- <script>
-                    $(document).ready(function () {
-		                $("#dob").change(function () {
-			            var start_date = new Date($("#dob").val());
-			            var date = new Date();
-			            var end_date = new Date(start_date);
-			            end_date.setFullYear (date.getFullYear()-start_date.getFullYear()); $("#age").val(end_date.getFullYear());
-		            });
-                });
-                
-                </script> -->
-    
+
+                <label for ="Age"> Age:</label>
+		        <input type="number" id="age" name="age" placeholder="Age"  readonly>
+            
                 <label class="required" for="mail">Email:</label>
                 <input type="email" id="mail" name="user_email" placeholder="Email">
           
@@ -134,8 +173,7 @@ $(document).ready(function () { 	$("#dob").change(function ()
                     </select>
             
             
-    	        <label for ="Age"> Age:</label>
-		        <input type="number" id="age" name="age" placeholder="Age"  readonly>         
+    	                 
         </fieldset>
 
     <div class="Address_details">
@@ -214,17 +252,25 @@ $(document).ready(function () { 	$("#dob").change(function ()
         
             <label class ="required">Passport Size Photo</label>
             <input type="file" id ="photo" name="photo" value ="Upload Photo" >
+
+            
+            <label>Passport Application Form:</label>
+            <div id="PDF">
+                <a href="Passport_App_Form_V1.0.pdf" target=" ">Download
+                </a>
+            </div>
+            <br>
+            
+            
+            
         </fieldset>
  </div>
+    
         <div class = _Buttons_>    
-            <button class="Button2" id ="Button2"type="submit">Register</button>
-            <button class="Button2" id="Button2"type="Reset">Reset</button>
+            <button class="Button2" id ="Button2" type="submit">Register</button>
+            <button class="Button2" id ="Button2" type="Reset">Reset</button>
         </div> 
 </form>
-
-<!-- <footer>
-    <h1>Thank Your</h1>
-</footer> -->
     
 
 </body>
