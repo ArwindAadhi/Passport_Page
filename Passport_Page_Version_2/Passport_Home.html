@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html>
 <link href="Passport_Design.css" rel="stylesheet" type="text/css">
-<script src="Passport.js"></script>
+<script src="Js_new.js"></script>
 <head>
 <meta charset="ISO-8859-1">
 <title>Passport Home</title>
@@ -10,7 +9,7 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<link href="Passport_Design.css" rel="stylesheet" type="text/css">
+<link href="Test.css" rel="stylesheet" type="text/css">
 
 <script> 
 $(document).ready(function () { 	$("#dob").change(function () 
@@ -122,7 +121,8 @@ $(document).ready(function () { 	$("#dob").change(function ()
             
             <legend><span class="number">1</span>Required Details</legend>
             <label class = "required" for="name">Name:</label>
-            <input type="text" id="name" placeholder="Name" name="name">
+            <input type="text" id="name" placeholder="Name" name="name" onblur="validateForm()">
+            <label id="lab_name" style="color: red";></label>
         
             <div class="Gender">
                     <label class = "required" for="name">Gender:</label>
@@ -141,31 +141,36 @@ $(document).ready(function () { 	$("#dob").change(function ()
             </div>
 
                 <label class="required" for="DOB" > Date of Birth:</label>
-                <input type="date" id="dob" placeholder="(dd/mm/yyyy)" name = "dob" >
-
+                <input type="date" id="dob" placeholder="(dd/mm/yyyy)" name = "dob" onblur="validateForm()">
+                <label id="lab_dob" style="color: red"></label>
+                
                 <label for ="Age"> Age:</label>
-		        <input type="number" id="age" name="age" placeholder="Age"  readonly>
+		        <input type="number" id="age" name="age" placeholder="Age"  readonly onblur="validateForm()">
             
                 <label class="required" for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" placeholder="Email">
-          
+                <input type="email" id="user_mail" name="user_email" placeholder="Email" onblur="validateForm()">
+                <label id="lab_email" style="color: red"></label>
+
                 <label class = "required" for="password">Password:</label>
-                <input type="password" id="password" name="user_password" Placeholder="Password" >
-                <span class="show-btn"><i class="fas fa-eye"></i></span>
+                <input type="password" id="password" name="user_password" Placeholder="Password" onblur="validateForm()">
+                <label id="lab_password" style="color: red"></label>
           
                 <label class = "required" for="Father Name">Father Name:</label>
-                 <input type="text" id="father_name" name="father_name" placeholder="Father Name" >
-    
+                <input type="text" id="father_name" name="father_name" placeholder="Father Name" onblur="validateForm()">
+                <label id="lab_father" style="color: red"></label>
+
                 <label class = "required" for="Mother Name">Mother Name:</label>
-                <input type="text" id="mother_name" name="mother_name" placeholder="Mother Name">
-    
+                <input type="text" id="mother_name" name="mother_name" placeholder="Mother Name" onblur="validateForm()">
+                <label id="lab_mother" style="color: red"></label>
+
                 <label class = "required" for="pan_number">PAN Number:</label>
-                <input type="text" id="pan_number" name="pan_number" placeholder="PAN Number">
-          
+                <input type="text" id="pan_number" name="pan_number" placeholder="PAN Number" onblur="validateForm()">
+                <label id="lab_pan" style="color: red"></label>
     
                 <label class = "required" for="aadhar_number">Aadhar Number:</label>
-                <input type="text" id="aadhar_number" name="aadhar_number" placeholder="Aadhar Number" >
-        
+                <input type="text" id="aadhar_number" name="aadhar_number" placeholder="Aadhar Number" onblur="validateForm()">
+                <label id="lab_aadhar" style="color: red"></label>
+
                 <label class = "required" for="state">Martial Status:</label>
                     <select id="martial_status" name="martial_status" >
                         <option value="Single">Single</option>
@@ -180,25 +185,31 @@ $(document).ready(function () { 	$("#dob").change(function ()
         <fieldset id="address" align="left">
             <legend><span class="number">2</span>Address Details</legend>
             <label class = "required" for="address" required >Address:</label>
-            <textarea id="Address" placeholder="Address" name="address"></textarea>
-        </fieldset>
+            <textarea id="Address" placeholder="Address" name="address" onblur="validateForm()"></textarea>
+            <label id="lab_address" style="color: red"></label>
+          </fieldset>
 
         <fieldset id="Address" align="left">
     
             <label class = "required" for="door_no">Door No :</label>
-            <input type="text" id="door_no" name="door_no" placeholder="Door No" >
-    
+            <input type="text" id="door_no" name="door_no" placeholder="Door No" onblur="validateForm()">
+            <label id="lab_door" style="color: red"></label>
+
             <label class = "required" for="Street">Street :</label>
-            <input type="text" id="street" name="street" placeholder="Street" >
-    
+            <input type="text" id="street" name="street" placeholder="Street" onblur="validateForm()">
+            <label id="lab_street" style="color: red"></label>
+
             <label class = "required" for="District">District :</label>
-            <input type="text" id="district" name="district" placeholder="District" >
+            <input type="text" id="district" name="district" placeholder="District" onblur="validateForm()">
+            <label id="lab_district" style="color: red"></label>
 
             <label class = "required" for="Pincode">Pincode :</label>
-            <input type="text" id="Pincode" name="Pincode" placeholder="Pincode" >
-    
+            <input type="text" id="Pincode" name="Pincode" placeholder="Pincode" onblur="validateForm()">
+            <label id="lab_pin" style="color: red"></label>
+
+
             <label class = "required" for="states" >Select State:</label>
-                <select id="states" name="states" placeholder= "State" >
+                <select id="states" name="states" placeholder= "State" onblur="validateForm()">
           	        <option value="0">Select</option>
                     <option value="Andhra Pradesh">Andhra Pradesh</option>
                     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -232,11 +243,13 @@ $(document).ready(function () { 	$("#dob").change(function ()
                     <option value="Uttarkhand">Uttarkhand</option>
                     <option value="West_Bengal">West Bengal</option>
                 </select>
+                <label id="lab_state" style="color: red"></label>
 
 
                 <label class = "required" for="Phone_Number">Phone Number :</label>
-                <input type="text" id="Phone_Number" name="Phone_Number" placeholder="Phone Number" >
-        
+                <input type="text" id="Phone_Number" name="Phone_Number" placeholder="Phone Number" onblur="validateForm()">
+                <label id="lab_phn" style="color: red"></label>
+
                 <label for="Resident" >Resident: (Optional) </label>
                 <select id="states" name="states" placeholder= "Country" >
                     <optgroup label="Select your Resident" Placeholeder="Resident" ></optgroup>
@@ -251,8 +264,8 @@ $(document).ready(function () { 	$("#dob").change(function ()
             <br>    
         
             <label class ="required">Passport Size Photo</label>
-            <input type="file" id ="photo" name="photo" value ="Upload Photo" >
-
+            <input type="file" id ="photo" name="photo" value ="Upload Photo" onblur="validateForm()">
+            <label id="lab_photo" style="color: red"></label>
             
             <label>Passport Application Form:</label>
             <div id="PDF">
