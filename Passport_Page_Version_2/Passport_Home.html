@@ -125,7 +125,7 @@ $(document).ready(function () { 	$("#dob").change(function ()
             <label id="lab_name" style="color: red";></label>
         
             <div class="Gender">
-                    <label class = "required" for="name">Gender:</label>
+                    <label class = "required" for="name" name="Gender">Gender:</label>
                     <div class="wrapper">
                             <input type="radio" name="select" id="option-1" checked>
                             <input type="radio" name="select" id="option-2">
@@ -251,14 +251,14 @@ $(document).ready(function () { 	$("#dob").change(function ()
                 <label id="lab_phn" style="color: red"></label>
 
                 <label for="Resident" >Resident: (Optional) </label>
-                <select id="states" name="states" placeholder= "Country" >
+                <select id="resident" name="resident" placeholder= "Country" >
                     <optgroup label="Select your Resident" Placeholeder="Resident" ></optgroup>
                     <option value="1">Select</option>
                     <option value="India">India</option>
                     <option value="NRI">NRI</option>
                 </select>
         
-          <label for ="res" id ="res "name="Resident">Disability (Optional)</label>
+          <label for ="res" id ="res "name="disability">Disability (Optional)</label>
           <input type="checkbox" id="Blind" value="Visibility" name="CheckBox"><label class="light" for="blind">Visibility</label><br>
             <input type="checkbox" id="Hearing" value="Hearing" name="CheckBox"><label class="light" for="NRI">Hearing</label><br>
             <br>    
